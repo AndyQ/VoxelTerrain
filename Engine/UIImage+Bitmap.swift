@@ -1,7 +1,3 @@
-//
-//  UIImage+Bitmap.swift
-//  Swiftenstien
-//
 //  UIImage+Bitmap.swift
 //  Voxel
 //
