@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n0n-se-ESd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voxel View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoxelViewController" customModule="Voxel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nzV-u0-x21"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.0869565217392" y="-534.375"/>
+        </scene>
+        <!--Select map-->
+        <scene sceneID="47o-Gc-XcF">
+            <objects>
+                <viewController id="dwv-P4-D7P" customClass="MapViewController" customModule="Voxel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mh8-ee-6Sh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MiY-oK-bl7">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cmZ-FI-rVA">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="2DD-Mp-OYX" customClass="ImageViewCell" customModule="Voxel" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="11A-aS-iwx">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-tY-BbE">
+                                                    <rect key="frame" x="10" y="10" width="108" height="108"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o5i-tY-BbE" firstAttribute="leading" secondItem="11A-aS-iwx" secondAttribute="leading" constant="10" id="5Io-tB-l8h"/>
+                                                <constraint firstItem="o5i-tY-BbE" firstAttribute="top" secondItem="11A-aS-iwx" secondAttribute="top" constant="10" id="DbT-4j-rBn"/>
+                                                <constraint firstAttribute="trailing" secondItem="o5i-tY-BbE" secondAttribute="trailing" constant="10" id="i8j-w3-jZo"/>
+                                                <constraint firstAttribute="bottom" secondItem="o5i-tY-BbE" secondAttribute="bottom" constant="10" id="vnM-BR-NLC"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="o5i-tY-BbE" id="OxB-Nb-R4V"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dwv-P4-D7P" id="buZ-NO-HHH"/>
+                                    <outlet property="delegate" destination="dwv-P4-D7P" id="dr8-Cd-AC5"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HgV-lD-wlB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HgV-lD-wlB" firstAttribute="bottom" secondItem="MiY-oK-bl7" secondAttribute="bottom" id="6aB-sp-uw4"/>
+                            <constraint firstItem="HgV-lD-wlB" firstAttribute="trailing" secondItem="MiY-oK-bl7" secondAttribute="trailing" id="Xih-js-Y0Y"/>
+                            <constraint firstItem="MiY-oK-bl7" firstAttribute="leading" secondItem="HgV-lD-wlB" secondAttribute="leading" id="kfu-5T-m5I"/>
+                            <constraint firstItem="MiY-oK-bl7" firstAttribute="top" secondItem="HgV-lD-wlB" secondAttribute="top" id="nQW-vn-tww"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select map" id="2HE-ln-4oc"/>
+                    <connections>
+                        <outlet property="collectionView" destination="MiY-oK-bl7" id="9w6-pb-8Nt"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showTerrain" id="cSA-26-g8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruM-HE-XKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560.86956521739137" y="-534.375"/>
+        </scene>
+        <!--Terrain Generation View Controller-->
+        <scene sceneID="FEV-sM-Bg1">
+            <objects>
+                <viewController storyboardIdentifier="TerrainGenerationViewController" id="cj5-NU-XW4" customClass="TerrainGenerationViewController" customModule="Voxel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oKR-RW-QbN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sdk-Ij-1jd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XaO-TJ-dZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKa-eH-bZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="-1139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qep-jc-osK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n0n-se-ESd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RXF-SW-WI4">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dwv-P4-D7P" kind="relationship" relationship="rootViewController" id="gZJ-Jw-xv6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9v-0l-9i2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349.27536231884062" y="-534.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
