@@ -23,9 +23,7 @@ However, I'm assuming that as this is for iOS, then you are probably runing on a
 To run, open a terminal window, change to the tools folder and run:<br>
 `./getImages.sh`
 
-This will download the images into an images subfolder, convert them to the correct size (if needed).
-
-Then all that's needed is to drop them into your Assests.xcassets file in Xcode.
+This will download the images into an images subfolder, convert them to the correct size (if needed), and copy them over to the Assets.xcassets folder.
 
 ## License
 
@@ -34,6 +32,7 @@ Please read the license file for more information.
 
 ## Credits
 
-Thanks to *gustavopezzi* and *s-macke* for their tutorials
-Thanks also to *Nick Lockwood* (@nicklockwood) for his RetroRampage series. Some of the rendering is based on ideas from that
+Thanks to **gustavopezzi** and **s-macke** for their tutorials
 
+Thanks also to **Nick Lockwood** (@nicklockwood) for his RetroRampage series. Some of the rendering is based on ideas from that.<br>
+(https://github.com/nicklockwood/RetroRampage)

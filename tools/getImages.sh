@@ -27,7 +27,45 @@ cp images/D25.png images/D28.png
 cp images/D16.png images/D29.png
 
 echo "Converting to size"
-sips -Z 1024 images/*.png
+sips -Z 1024 images/*.png > /dev/null 2>&1
 
+echo "Copying to Assets.XCAssets..."
+for file in images/*; do 
+    source="${file/images\/}"
+    source="${source/.png}"
+
+    assetFolder="../Voxel/Assets.xcassets/${source}.imageset"
+    if [ ! -d "${assetFolder}" ]
+    then
+        mkdir "${assetFolder}"
+        cp "${file}" "${assetFolder}/${source}.png"
+
+        cat <<EOT >> "${assetFolder}/Contents.json"
+{
+  "images" : [
+    {
+      "filename" : "${source}.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+EOT
+
+    fi
+
+done
 
 
