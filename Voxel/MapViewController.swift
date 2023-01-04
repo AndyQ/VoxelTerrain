@@ -12,15 +12,30 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var collectionView : UICollectionView!
     var selectedMapNr : Int = 0
+    var nrMaps = 29
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UIImage(named:"C1" ) == nil {
+            nrMaps = 0
+            
+            let lbl = UILabel(frame:.zero)
+            lbl.textAlignment = .center
+            lbl.numberOfLines = 0
+            lbl.text = "No map images found!\nDid you run the getImages.sh script from the tools folder?\n\nPlease see the README.md file for more information."
+            view.addSubview(lbl)
+            
+            lbl.translatesAutoresizingMaskIntoConstraints = false
+            lbl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            lbl.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        }
     }
 }
 
 extension MapViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 29
+        return nrMaps
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

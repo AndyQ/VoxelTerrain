@@ -2,6 +2,8 @@
 
 A voxel landscape - similar to the look of Novalogic's Commanche.
 
+<img src="images/voxel.png" alt="Voxel Terrain" width="1024"/>
+
 This is a port of two engines:
 - @gustavopezzi's (@Pikukma@mastodon.gamedev.place) rendering engine
 (https://github.com/gustavopezzi/voxelspace)

@@ -14,7 +14,7 @@ public struct Camera {
     var height : CGFloat = 624//78
     var angle : CGFloat = 0
     public var horizon : CGFloat = 10 //100
-    var distance : CGFloat = 2200
+    var distance : CGFloat = 3200
 }
 
 struct Map {
