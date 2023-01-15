@@ -27,6 +27,7 @@ struct TerrainGenerationView : View {
         
         VStack {
             HStack {
+                
                 Button("Generate") {
                     terrain.makeMidpointDisplacement(roughness: 0.5, seed: Int.random(in: 0...Int.max), firValue: 0)//0.65)
                     heightMapImage = terrain.image()
@@ -56,7 +57,7 @@ struct TerrainGenerationView : View {
                 .disabled(!hasDepth)
                 
                 Button("Texture") {
-                    let bm = terrain.bitmap()
+                    let bm =  (hasEroded ? erodeMapImage : heightMapImage).getBitmap()
                     let tg = TextureGenerator()
                     let tm = tg.generateTexture(bm)
 
