@@ -8,37 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		A11BC95522312F14003D2BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BC95422312F14003D2BAE /* AppDelegate.swift */; };
-		A11BC95722312F14003D2BAE /* VoxelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BC95622312F14003D2BAE /* VoxelViewController.swift */; };
 		A11BC95A22312F14003D2BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11BC95822312F14003D2BAE /* Main.storyboard */; };
 		A11BC95C22312F16003D2BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11BC95B22312F16003D2BAE /* Assets.xcassets */; };
 		A11BC95F22312F16003D2BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11BC95D22312F16003D2BAE /* LaunchScreen.storyboard */; };
-		A11CAE1F291566AF00755BC1 /* UIImage+Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A60D0F22D2379F002D4B42 /* UIImage+Bitmap.swift */; };
 		A11CAE2629156A9800755BC1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CAE24291569BD00755BC1 /* GameController.swift */; };
 		A11CAE2829156A9800755BC1 /* GameControllerInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CAE23291569BD00755BC1 /* GameControllerInputSource.swift */; };
-		A18646DA295B03CD00BD658E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646D9295B03CD00BD658E /* Utils.swift */; };
-		A18646DC295B36B800BD658E /* TerrainGenerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646DB295B36B800BD658E /* TerrainGenerationViewController.swift */; };
-		A18646DF295B38AE00BD658E /* PerlinNoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646DE295B38AE00BD658E /* PerlinNoiseGenerator.swift */; };
-		A18646E1295B38B600BD658E /* Lightmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E0295B38B600BD658E /* Lightmap.swift */; };
-		A18646E3295B38C300BD658E /* TextureGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E2295B38C300BD658E /* TextureGenerator.swift */; };
-		A18646E5295B5ADF00BD658E /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E4295B5ADF00BD658E /* Vector.swift */; };
-		A186473B295C6A0B00BD658E /* TerrainGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186473A295C6A0B00BD658E /* TerrainGenerator.swift */; };
+		A187EDD12974242300CC2CA8 /* TerrainGeneration.docc in Sources */ = {isa = PBXBuildFile; fileRef = A187EDD02974242300CC2CA8 /* TerrainGeneration.docc */; };
+		A187EDD72974242300CC2CA8 /* TerrainGeneration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */; };
+		A187EDDE2974242300CC2CA8 /* TerrainGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDDD2974242300CC2CA8 /* TerrainGenerationTests.swift */; };
+		A187EDDF2974242300CC2CA8 /* TerrainGeneration.h in Headers */ = {isa = PBXBuildFile; fileRef = A187EDCF2974242300CC2CA8 /* TerrainGeneration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A187EDE22974242400CC2CA8 /* TerrainGeneration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */; };
+		A187EDE32974242400CC2CA8 /* TerrainGeneration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A187EDEB2974279F00CC2CA8 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDEA2974279F00CC2CA8 /* Random.swift */; };
+		A187EDED2974290100CC2CA8 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E4295B5ADF00BD658E /* Vector3.swift */; };
+		A187EDEE2974290100CC2CA8 /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1065955297057D6003E0161 /* Vector2.swift */; };
+		A187EDEF2974290100CC2CA8 /* Perlin2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1065957297057ED003E0161 /* Perlin2D.swift */; };
+		A187EDF02974290100CC2CA8 /* PerlinNoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDC62972C5A500CC2CA8 /* PerlinNoiseGenerator.swift */; };
+		A187EDF12974290500CC2CA8 /* TextureGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E2295B38C300BD658E /* TextureGenerator.swift */; };
+		A187EDF22974290500CC2CA8 /* Erosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1065951297054CB003E0161 /* Erosion.swift */; };
+		A187EDF32974290500CC2CA8 /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1065952297054CB003E0161 /* Terrain.swift */; };
+		A187EDF42974290500CC2CA8 /* Lightmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18646E0295B38B600BD658E /* Lightmap.swift */; };
+		A187EDF52974290500CC2CA8 /* TerrainGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A186473A295C6A0B00BD658E /* TerrainGenerator.swift */; };
+		A187EDF9297463E700CC2CA8 /* TerrainGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDF8297463E700CC2CA8 /* TerrainGenerationView.swift */; };
+		A187EDFB297463F100CC2CA8 /* MapSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDFA297463F100CC2CA8 /* MapSelectView.swift */; };
+		A187EDFD297463FB00CC2CA8 /* VoxelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDFC297463FB00CC2CA8 /* VoxelView.swift */; };
+		A187EDFF2974640B00CC2CA8 /* OverheadMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EDFE2974640B00CC2CA8 /* OverheadMapView.swift */; };
+		A187EE012974648000CC2CA8 /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187EE002974648000CC2CA8 /* DisplayLink.swift */; };
 		A197A3542917D72A00B294B9 /* UIBezier_arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A197A3532917D72A00B294B9 /* UIBezier_arrow.swift */; };
-		A1A60D2322D27AC9002D4B42 /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A60D1C22D27AC9002D4B42 /* Engine.framework */; };
-		A1A60D2422D27AC9002D4B42 /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1A60D1C22D27AC9002D4B42 /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1A60D2922D27AF0002D4B42 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A60D1122D237C7002D4B42 /* Color.swift */; };
-		A1A60D2A22D27AF0002D4B42 /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A60D1322D23842002D4B42 /* Bitmap.swift */; };
-		A1A60D2C22D27AF0002D4B42 /* VoxelEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BC96622312F2B003D2BAE /* VoxelEngine.swift */; };
-		A1D7061929649B020011F342 /* VoxelEngine_origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D70617296484DA0011F342 /* VoxelEngine_origin.swift */; };
-		A1D7061C2965AF700011F342 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7061B2965AF700011F342 /* MapViewController.swift */; };
-		A1D7061E2965AFEC0011F342 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D7061D2965AFEC0011F342 /* ImageViewCell.swift */; };
+		A1F2110C2974663000C16FDE /* Engine.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F2110B2974663000C16FDE /* Engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F2110F2974663000C16FDE /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F211092974663000C16FDE /* Engine.framework */; };
+		A1F211102974663000C16FDE /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F211092974663000C16FDE /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1F2111A2974665000C16FDE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211142974665000C16FDE /* Color.swift */; };
+		A1F2111B2974665000C16FDE /* UIImage+Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211152974665000C16FDE /* UIImage+Bitmap.swift */; };
+		A1F2111D2974665000C16FDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211172974665000C16FDE /* Utils.swift */; };
+		A1F2111E2974665000C16FDE /* VoxelEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211182974665000C16FDE /* VoxelEngine.swift */; };
+		A1F2111F2974665000C16FDE /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211192974665000C16FDE /* Bitmap.swift */; };
+		A1F211232974765400C16FDE /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211222974765400C16FDE /* AsyncButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1A60D2122D27AC9002D4B42 /* PBXContainerItemProxy */ = {
+		A187EDD82974242300CC2CA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A11BC94922312F14003D2BAE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A1A60D1B22D27AC9002D4B42;
+			remoteGlobalIDString = A187EDCC2974242300CC2CA8;
+			remoteInfo = TerrainGeneration;
+		};
+		A187EDDA2974242300CC2CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11BC94922312F14003D2BAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A11BC95022312F14003D2BAE;
+			remoteInfo = Voxel;
+		};
+		A187EDE02974242400CC2CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11BC94922312F14003D2BAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A187EDCC2974242300CC2CA8;
+			remoteInfo = TerrainGeneration;
+		};
+		A1F2110D2974663000C16FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11BC94922312F14003D2BAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F211082974663000C16FDE;
+			remoteInfo = Engine;
+		};
+		A1F211202974670600C16FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11BC94922312F14003D2BAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F211082974663000C16FDE;
 			remoteInfo = Engine;
 		};
 /* End PBXContainerItemProxy section */
@@ -50,7 +91,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1A60D2422D27AC9002D4B42 /* Engine.framework in Embed Frameworks */,
+				A1F211102974663000C16FDE /* Engine.framework in Embed Frameworks */,
+				A187EDE32974242400CC2CA8 /* TerrainGeneration.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +100,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A1065951297054CB003E0161 /* Erosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erosion.swift; sourceTree = "<group>"; };
+		A1065952297054CB003E0161 /* Terrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
+		A1065955297057D6003E0161 /* Vector2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
+		A1065957297057ED003E0161 /* Perlin2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perlin2D.swift; sourceTree = "<group>"; };
 		A11BC95122312F14003D2BAE /* Voxel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voxel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11BC95422312F14003D2BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A11BC95622312F14003D2BAE /* VoxelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelViewController.swift; sourceTree = "<group>"; };
@@ -65,26 +111,37 @@
 		A11BC95B22312F16003D2BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11BC95E22312F16003D2BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11BC96022312F16003D2BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A11BC96622312F2B003D2BAE /* VoxelEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelEngine.swift; sourceTree = "<group>"; };
 		A11CAE23291569BD00755BC1 /* GameControllerInputSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerInputSource.swift; sourceTree = "<group>"; };
 		A11CAE24291569BD00755BC1 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		A18646D9295B03CD00BD658E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A18646DB295B36B800BD658E /* TerrainGenerationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainGenerationViewController.swift; sourceTree = "<group>"; };
-		A18646DE295B38AE00BD658E /* PerlinNoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinNoiseGenerator.swift; sourceTree = "<group>"; };
 		A18646E0295B38B600BD658E /* Lightmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lightmap.swift; sourceTree = "<group>"; };
 		A18646E2295B38C300BD658E /* TextureGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureGenerator.swift; sourceTree = "<group>"; };
-		A18646E4295B5ADF00BD658E /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		A18646E4295B5ADF00BD658E /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		A186473A295C6A0B00BD658E /* TerrainGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainGenerator.swift; sourceTree = "<group>"; };
+		A187EDC62972C5A500CC2CA8 /* PerlinNoiseGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerlinNoiseGenerator.swift; sourceTree = "<group>"; };
+		A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TerrainGeneration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A187EDCF2974242300CC2CA8 /* TerrainGeneration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TerrainGeneration.h; sourceTree = "<group>"; };
+		A187EDD02974242300CC2CA8 /* TerrainGeneration.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TerrainGeneration.docc; sourceTree = "<group>"; };
+		A187EDD62974242300CC2CA8 /* TerrainGenerationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerrainGenerationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A187EDDD2974242300CC2CA8 /* TerrainGenerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainGenerationTests.swift; sourceTree = "<group>"; };
+		A187EDEA2974279F00CC2CA8 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		A187EDF8297463E700CC2CA8 /* TerrainGenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainGenerationView.swift; sourceTree = "<group>"; };
+		A187EDFA297463F100CC2CA8 /* MapSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSelectView.swift; sourceTree = "<group>"; };
+		A187EDFC297463FB00CC2CA8 /* VoxelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelView.swift; sourceTree = "<group>"; };
+		A187EDFE2974640B00CC2CA8 /* OverheadMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverheadMapView.swift; sourceTree = "<group>"; };
+		A187EE002974648000CC2CA8 /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
 		A197A3532917D72A00B294B9 /* UIBezier_arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezier_arrow.swift; sourceTree = "<group>"; };
-		A1A60D0F22D2379F002D4B42 /* UIImage+Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Bitmap.swift"; sourceTree = "<group>"; };
-		A1A60D1122D237C7002D4B42 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A1A60D1322D23842002D4B42 /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
-		A1A60D1C22D27AC9002D4B42 /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1A60D1F22D27AC9002D4B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1D70617296484DA0011F342 /* VoxelEngine_origin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelEngine_origin.swift; sourceTree = "<group>"; };
 		A1D7061B2965AF700011F342 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1D7061D2965AFEC0011F342 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
 		A1D7061F2965C1870011F342 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1F211092974663000C16FDE /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F2110B2974663000C16FDE /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		A1F211142974665000C16FDE /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Engine/Color.swift; sourceTree = SOURCE_ROOT; };
+		A1F211152974665000C16FDE /* UIImage+Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Bitmap.swift"; path = "Engine/UIImage+Bitmap.swift"; sourceTree = SOURCE_ROOT; };
+		A1F211172974665000C16FDE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Engine/Utils.swift; sourceTree = SOURCE_ROOT; };
+		A1F211182974665000C16FDE /* VoxelEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoxelEngine.swift; path = Engine/VoxelEngine.swift; sourceTree = SOURCE_ROOT; };
+		A1F211192974665000C16FDE /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bitmap.swift; path = Engine/Bitmap.swift; sourceTree = SOURCE_ROOT; };
+		A1F211222974765400C16FDE /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +149,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A60D2322D27AC9002D4B42 /* Engine.framework in Frameworks */,
+				A1F2110F2974663000C16FDE /* Engine.framework in Frameworks */,
+				A187EDE22974242400CC2CA8 /* TerrainGeneration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1A60D1922D27AC9002D4B42 /* Frameworks */ = {
+		A187EDCA2974242300CC2CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A187EDD32974242300CC2CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A187EDD72974242300CC2CA8 /* TerrainGeneration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F211062974663000C16FDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,12 +179,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A106595929715833003E0161 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				A18646E0295B38B600BD658E /* Lightmap.swift */,
+				A1065952297054CB003E0161 /* Terrain.swift */,
+				A1065951297054CB003E0161 /* Erosion.swift */,
+				A186473A295C6A0B00BD658E /* TerrainGenerator.swift */,
+				A18646E2295B38C300BD658E /* TextureGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
 		A11BC94822312F14003D2BAE = {
 			isa = PBXGroup;
 			children = (
 				A1D7061F2965C1870011F342 /* README.md */,
 				A11BC95322312F14003D2BAE /* Voxel */,
-				A1A60D1D22D27AC9002D4B42 /* Engine */,
+				A1F2110A2974663000C16FDE /* Engine */,
+				A187EDCE2974242300CC2CA8 /* TerrainGeneration */,
+				A187EDDC2974242300CC2CA8 /* TerrainGenerationTests */,
 				A11BC95222312F14003D2BAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				A11BC95122312F14003D2BAE /* Voxel.app */,
-				A1A60D1C22D27AC9002D4B42 /* Engine.framework */,
+				A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */,
+				A187EDD62974242300CC2CA8 /* TerrainGenerationTests.xctest */,
+				A1F211092974663000C16FDE /* Engine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,12 +217,10 @@
 		A11BC95322312F14003D2BAE /* Voxel */ = {
 			isa = PBXGroup;
 			children = (
-				A1D7061A2965AF0B0011F342 /* TerrainGeneration */,
+				A187EDF7297463CA00CC2CA8 /* UIKit View Controllers - Deprecated */,
+				A187EDF6297463BD00CC2CA8 /* SwiftUI Views */,
 				A11CAE20291569BD00755BC1 /* PlayerInput */,
 				A11BC95422312F14003D2BAE /* AppDelegate.swift */,
-				A1D7061B2965AF700011F342 /* MapViewController.swift */,
-				A11BC95622312F14003D2BAE /* VoxelViewController.swift */,
-				A1D7061D2965AFEC0011F342 /* ImageViewCell.swift */,
 				A197A3532917D72A00B294B9 /* UIBezier_arrow.swift */,
 				A11BC95822312F14003D2BAE /* Main.storyboard */,
 				A11BC95B22312F16003D2BAE /* Assets.xcassets */,
@@ -152,48 +239,90 @@
 			path = PlayerInput;
 			sourceTree = "<group>";
 		};
-		A18646DD295B389400BD658E /* Model */ = {
+		A18646DD295B389400BD658E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A18646DE295B38AE00BD658E /* PerlinNoiseGenerator.swift */,
-				A18646E0295B38B600BD658E /* Lightmap.swift */,
-				A18646E4295B5ADF00BD658E /* Vector.swift */,
-				A18646E2295B38C300BD658E /* TextureGenerator.swift */,
-				A186473A295C6A0B00BD658E /* TerrainGenerator.swift */,
+				A187EDC62972C5A500CC2CA8 /* PerlinNoiseGenerator.swift */,
+				A1065957297057ED003E0161 /* Perlin2D.swift */,
+				A18646E4295B5ADF00BD658E /* Vector3.swift */,
+				A1065955297057D6003E0161 /* Vector2.swift */,
+				A187EDEA2974279F00CC2CA8 /* Random.swift */,
 			);
-			path = Model;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		A1A60D1D22D27AC9002D4B42 /* Engine */ = {
+		A187EDCE2974242300CC2CA8 /* TerrainGeneration */ = {
 			isa = PBXGroup;
 			children = (
-				A1A60D0F22D2379F002D4B42 /* UIImage+Bitmap.swift */,
-				A1A60D1122D237C7002D4B42 /* Color.swift */,
-				A1A60D1322D23842002D4B42 /* Bitmap.swift */,
-				A11BC96622312F2B003D2BAE /* VoxelEngine.swift */,
-				A1D70617296484DA0011F342 /* VoxelEngine_origin.swift */,
-				A18646D9295B03CD00BD658E /* Utils.swift */,
-				A1A60D1F22D27AC9002D4B42 /* Info.plist */,
-			);
-			path = Engine;
-			sourceTree = "<group>";
-		};
-		A1D7061A2965AF0B0011F342 /* TerrainGeneration */ = {
-			isa = PBXGroup;
-			children = (
-				A18646DD295B389400BD658E /* Model */,
-				A18646DB295B36B800BD658E /* TerrainGenerationViewController.swift */,
+				A18646DD295B389400BD658E /* Utils */,
+				A106595929715833003E0161 /* Generators */,
+				A187EDCF2974242300CC2CA8 /* TerrainGeneration.h */,
+				A187EDD02974242300CC2CA8 /* TerrainGeneration.docc */,
 			);
 			path = TerrainGeneration;
+			sourceTree = "<group>";
+		};
+		A187EDDC2974242300CC2CA8 /* TerrainGenerationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A187EDDD2974242300CC2CA8 /* TerrainGenerationTests.swift */,
+			);
+			path = TerrainGenerationTests;
+			sourceTree = "<group>";
+		};
+		A187EDF6297463BD00CC2CA8 /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				A187EDF8297463E700CC2CA8 /* TerrainGenerationView.swift */,
+				A187EDFA297463F100CC2CA8 /* MapSelectView.swift */,
+				A187EDFC297463FB00CC2CA8 /* VoxelView.swift */,
+				A187EDFE2974640B00CC2CA8 /* OverheadMapView.swift */,
+				A187EE002974648000CC2CA8 /* DisplayLink.swift */,
+				A1F211222974765400C16FDE /* AsyncButton.swift */,
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
+		A187EDF7297463CA00CC2CA8 /* UIKit View Controllers - Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				A18646DB295B36B800BD658E /* TerrainGenerationViewController.swift */,
+				A1D7061B2965AF700011F342 /* MapViewController.swift */,
+				A11BC95622312F14003D2BAE /* VoxelViewController.swift */,
+				A1D7061D2965AFEC0011F342 /* ImageViewCell.swift */,
+			);
+			path = "UIKit View Controllers - Deprecated";
+			sourceTree = "<group>";
+		};
+		A1F2110A2974663000C16FDE /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A1F211192974665000C16FDE /* Bitmap.swift */,
+				A1F211142974665000C16FDE /* Color.swift */,
+				A1F211152974665000C16FDE /* UIImage+Bitmap.swift */,
+				A1F211172974665000C16FDE /* Utils.swift */,
+				A1F211182974665000C16FDE /* VoxelEngine.swift */,
+				A1F2110B2974663000C16FDE /* Engine.h */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A1A60D1722D27AC9002D4B42 /* Headers */ = {
+		A187EDC82974242300CC2CA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A187EDDF2974242300CC2CA8 /* TerrainGeneration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F211042974663000C16FDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F2110C2974663000C16FDE /* Engine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,21 +341,60 @@
 			buildRules = (
 			);
 			dependencies = (
-				A1A60D2222D27AC9002D4B42 /* PBXTargetDependency */,
+				A187EDE12974242400CC2CA8 /* PBXTargetDependency */,
+				A1F2110E2974663000C16FDE /* PBXTargetDependency */,
 			);
 			name = Voxel;
 			productName = Voxel;
 			productReference = A11BC95122312F14003D2BAE /* Voxel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1A60D1B22D27AC9002D4B42 /* Engine */ = {
+		A187EDCC2974242300CC2CA8 /* TerrainGeneration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1A60D2522D27AC9002D4B42 /* Build configuration list for PBXNativeTarget "Engine" */;
+			buildConfigurationList = A187EDE42974242400CC2CA8 /* Build configuration list for PBXNativeTarget "TerrainGeneration" */;
 			buildPhases = (
-				A1A60D1722D27AC9002D4B42 /* Headers */,
-				A1A60D1822D27AC9002D4B42 /* Sources */,
-				A1A60D1922D27AC9002D4B42 /* Frameworks */,
-				A1A60D1A22D27AC9002D4B42 /* Resources */,
+				A187EDC82974242300CC2CA8 /* Headers */,
+				A187EDC92974242300CC2CA8 /* Sources */,
+				A187EDCA2974242300CC2CA8 /* Frameworks */,
+				A187EDCB2974242300CC2CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F211212974670600C16FDE /* PBXTargetDependency */,
+			);
+			name = TerrainGeneration;
+			productName = TerrainGeneration;
+			productReference = A187EDCD2974242300CC2CA8 /* TerrainGeneration.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A187EDD52974242300CC2CA8 /* TerrainGenerationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A187EDE72974242400CC2CA8 /* Build configuration list for PBXNativeTarget "TerrainGenerationTests" */;
+			buildPhases = (
+				A187EDD22974242300CC2CA8 /* Sources */,
+				A187EDD32974242300CC2CA8 /* Frameworks */,
+				A187EDD42974242300CC2CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A187EDD92974242300CC2CA8 /* PBXTargetDependency */,
+				A187EDDB2974242300CC2CA8 /* PBXTargetDependency */,
+			);
+			name = TerrainGenerationTests;
+			productName = TerrainGenerationTests;
+			productReference = A187EDD62974242300CC2CA8 /* TerrainGenerationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1F211082974663000C16FDE /* Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F211112974663000C16FDE /* Build configuration list for PBXNativeTarget "Engine" */;
+			buildPhases = (
+				A1F211042974663000C16FDE /* Headers */,
+				A1F211052974663000C16FDE /* Sources */,
+				A1F211062974663000C16FDE /* Frameworks */,
+				A1F211072974663000C16FDE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +402,7 @@
 			);
 			name = Engine;
 			productName = Engine;
-			productReference = A1A60D1C22D27AC9002D4B42 /* Engine.framework */;
+			productReference = A1F211092974663000C16FDE /* Engine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -243,15 +411,23 @@
 		A11BC94922312F14003D2BAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Andy Qua";
 				TargetAttributes = {
 					A11BC95022312F14003D2BAE = {
 						CreatedOnToolsVersion = 10.2;
 					};
-					A1A60D1B22D27AC9002D4B42 = {
-						CreatedOnToolsVersion = 11.0;
+					A187EDCC2974242300CC2CA8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A187EDD52974242300CC2CA8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A11BC95022312F14003D2BAE;
+					};
+					A1F211082974663000C16FDE = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -269,7 +445,9 @@
 			projectRoot = "";
 			targets = (
 				A11BC95022312F14003D2BAE /* Voxel */,
-				A1A60D1B22D27AC9002D4B42 /* Engine */,
+				A1F211082974663000C16FDE /* Engine */,
+				A187EDCC2974242300CC2CA8 /* TerrainGeneration */,
+				A187EDD52974242300CC2CA8 /* TerrainGenerationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +463,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1A60D1A22D27AC9002D4B42 /* Resources */ = {
+		A187EDCB2974242300CC2CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A187EDD42974242300CC2CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F211072974663000C16FDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,42 +491,84 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A186473B295C6A0B00BD658E /* TerrainGenerator.swift in Sources */,
+				A187EE012974648000CC2CA8 /* DisplayLink.swift in Sources */,
 				A197A3542917D72A00B294B9 /* UIBezier_arrow.swift in Sources */,
-				A1D7061E2965AFEC0011F342 /* ImageViewCell.swift in Sources */,
 				A11CAE2829156A9800755BC1 /* GameControllerInputSource.swift in Sources */,
-				A18646E5295B5ADF00BD658E /* Vector.swift in Sources */,
-				A11BC95722312F14003D2BAE /* VoxelViewController.swift in Sources */,
-				A18646E3295B38C300BD658E /* TextureGenerator.swift in Sources */,
-				A18646DC295B36B800BD658E /* TerrainGenerationViewController.swift in Sources */,
-				A1D7061C2965AF700011F342 /* MapViewController.swift in Sources */,
+				A187EDFD297463FB00CC2CA8 /* VoxelView.swift in Sources */,
+				A1F211232974765400C16FDE /* AsyncButton.swift in Sources */,
+				A187EDFF2974640B00CC2CA8 /* OverheadMapView.swift in Sources */,
 				A11CAE2629156A9800755BC1 /* GameController.swift in Sources */,
-				A18646DF295B38AE00BD658E /* PerlinNoiseGenerator.swift in Sources */,
+				A187EDF9297463E700CC2CA8 /* TerrainGenerationView.swift in Sources */,
 				A11BC95522312F14003D2BAE /* AppDelegate.swift in Sources */,
-				A18646E1295B38B600BD658E /* Lightmap.swift in Sources */,
+				A187EDFB297463F100CC2CA8 /* MapSelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1A60D1822D27AC9002D4B42 /* Sources */ = {
+		A187EDC92974242300CC2CA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18646DA295B03CD00BD658E /* Utils.swift in Sources */,
-				A11CAE1F291566AF00755BC1 /* UIImage+Bitmap.swift in Sources */,
-				A1D7061929649B020011F342 /* VoxelEngine_origin.swift in Sources */,
-				A1A60D2C22D27AF0002D4B42 /* VoxelEngine.swift in Sources */,
-				A1A60D2A22D27AF0002D4B42 /* Bitmap.swift in Sources */,
-				A1A60D2922D27AF0002D4B42 /* Color.swift in Sources */,
+				A187EDF52974290500CC2CA8 /* TerrainGenerator.swift in Sources */,
+				A187EDF02974290100CC2CA8 /* PerlinNoiseGenerator.swift in Sources */,
+				A187EDEB2974279F00CC2CA8 /* Random.swift in Sources */,
+				A187EDEF2974290100CC2CA8 /* Perlin2D.swift in Sources */,
+				A187EDF42974290500CC2CA8 /* Lightmap.swift in Sources */,
+				A187EDEE2974290100CC2CA8 /* Vector2.swift in Sources */,
+				A187EDF32974290500CC2CA8 /* Terrain.swift in Sources */,
+				A187EDED2974290100CC2CA8 /* Vector3.swift in Sources */,
+				A187EDF12974290500CC2CA8 /* TextureGenerator.swift in Sources */,
+				A187EDD12974242300CC2CA8 /* TerrainGeneration.docc in Sources */,
+				A187EDF22974290500CC2CA8 /* Erosion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A187EDD22974242300CC2CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A187EDDE2974242300CC2CA8 /* TerrainGenerationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F211052974663000C16FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F2111E2974665000C16FDE /* VoxelEngine.swift in Sources */,
+				A1F2111B2974665000C16FDE /* UIImage+Bitmap.swift in Sources */,
+				A1F2111A2974665000C16FDE /* Color.swift in Sources */,
+				A1F2111D2974665000C16FDE /* Utils.swift in Sources */,
+				A1F2111F2974665000C16FDE /* Bitmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A1A60D2222D27AC9002D4B42 /* PBXTargetDependency */ = {
+		A187EDD92974242300CC2CA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1A60D1B22D27AC9002D4B42 /* Engine */;
-			targetProxy = A1A60D2122D27AC9002D4B42 /* PBXContainerItemProxy */;
+			target = A187EDCC2974242300CC2CA8 /* TerrainGeneration */;
+			targetProxy = A187EDD82974242300CC2CA8 /* PBXContainerItemProxy */;
+		};
+		A187EDDB2974242300CC2CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A11BC95022312F14003D2BAE /* Voxel */;
+			targetProxy = A187EDDA2974242300CC2CA8 /* PBXContainerItemProxy */;
+		};
+		A187EDE12974242400CC2CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A187EDCC2974242300CC2CA8 /* TerrainGeneration */;
+			targetProxy = A187EDE02974242400CC2CA8 /* PBXContainerItemProxy */;
+		};
+		A1F2110E2974663000C16FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F211082974663000C16FDE /* Engine */;
+			targetProxy = A1F2110D2974663000C16FDE /* PBXContainerItemProxy */;
+		};
+		A1F211212974670600C16FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F211082974663000C16FDE /* Engine */;
+			targetProxy = A1F211202974670600C16FDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,7 +718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4ZM73UFF5;
 				INFOPLIST_FILE = Voxel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +738,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4ZM73UFF5;
 				INFOPLIST_FILE = Voxel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,9 +750,10 @@
 			};
 			name = Release;
 		};
-		A1A60D2622D27AC9002D4B42 /* Debug */ = {
+		A187EDE52974242400CC2CA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -526,17 +761,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Engine/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Andy Qua. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andyqua.Engine;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.TerrainGeneration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -544,9 +782,10 @@
 			};
 			name = Debug;
 		};
-		A1A60D2722D27AC9002D4B42 /* Release */ = {
+		A187EDE62974242400CC2CA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -554,17 +793,127 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Engine/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Andy Qua. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andyqua.Engine;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.TerrainGeneration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A187EDE82974242400CC2CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.TerrainGenerationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voxel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voxel";
+			};
+			name = Debug;
+		};
+		A187EDE92974242400CC2CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.TerrainGenerationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voxel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voxel";
+			};
+			name = Release;
+		};
+		A1F211122974663000C16FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Andy Qua. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.Engine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1F211132974663000C16FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A4ZM73UFF5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Andy Qua. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyq.Engine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -593,11 +942,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1A60D2522D27AC9002D4B42 /* Build configuration list for PBXNativeTarget "Engine" */ = {
+		A187EDE42974242400CC2CA8 /* Build configuration list for PBXNativeTarget "TerrainGeneration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1A60D2622D27AC9002D4B42 /* Debug */,
-				A1A60D2722D27AC9002D4B42 /* Release */,
+				A187EDE52974242400CC2CA8 /* Debug */,
+				A187EDE62974242400CC2CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A187EDE72974242400CC2CA8 /* Build configuration list for PBXNativeTarget "TerrainGenerationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A187EDE82974242400CC2CA8 /* Debug */,
+				A187EDE92974242400CC2CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F211112974663000C16FDE /* Build configuration list for PBXNativeTarget "Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F211122974663000C16FDE /* Debug */,
+				A1F211132974663000C16FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

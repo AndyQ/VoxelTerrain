@@ -12,7 +12,7 @@ import Accelerate
 
 public extension UIImage {
     convenience init?(bitmap: Bitmap) {
-        let alphaInfo = CGImageAlphaInfo.premultipliedLast
+        let alphaInfo = CGImageAlphaInfo.noneSkipLast//premultipliedLast
         let bytesPerPixel = MemoryLayout<Color>.size
         let bytesPerRow = bitmap.width * bytesPerPixel
         

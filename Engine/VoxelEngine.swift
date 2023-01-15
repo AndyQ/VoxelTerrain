@@ -9,12 +9,12 @@
 import GameplayKit
 
 public struct Camera {
-    var x : CGFloat = 512
-    var y : CGFloat = 800
-    var height : CGFloat = 624//78
-    var angle : CGFloat = 0
+    public var x : CGFloat = 512
+    public var y : CGFloat = 800
+    public var height : CGFloat = 624//78
+    public var angle : CGFloat = 0
     public var horizon : CGFloat = 10 //100
-    var distance : CGFloat = 3200
+    public var distance : CGFloat = 3200
 }
 
 struct Map {
@@ -67,7 +67,7 @@ public class VoxelEngine {
     var ty : Double = 0
     let follow_terrain = false
 
-    let mapScale = 8
+    public let mapScale = 8
 
 
     public init( mapData: Bitmap, depthData: Bitmap, size: CGSize ) {
