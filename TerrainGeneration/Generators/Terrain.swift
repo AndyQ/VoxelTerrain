@@ -512,7 +512,7 @@ extension Terrain {
     
 
     
-    public func makeThermalErosion(talus: Double, iterations: Int) {
+    public func makeThermalErosion(talus: Double, iterations: Int) async {
         for _ in 0..<iterations {
             for i in 0..<m_iSize {
                 for j in 0..<m_iSize {
@@ -576,7 +576,7 @@ extension Terrain {
         }
     }
     
-    public func makeHydraulicErosion(water: Double, sediment: Double, evaporation: Double, capacity: Double, iterations: Int) {
+    public func makeHydraulicErosion(water: Double, sediment: Double, evaporation: Double, capacity: Double, iterations: Int) async {
         var watermap = Array(repeating: Double(0), count: m_iSize2)
         var sedimentmap = Array(repeating: Double(0), count: m_iSize2)
         

@@ -19,15 +19,15 @@ struct RandomNumberGeneratorWithSeed: RandomNumberGenerator {
 
 var seededGenerator = RandomNumberGeneratorWithSeed(seed: Int.random(in: Int.min ... Int.max))
 
-func setRandomSeed( _ seed : Int ) {
+public func setRandomSeed( _ seed : Int ) {
     seededGenerator.setSeed(seed: seed)
 }
 
-func randomInt( in range:Range<Int>) -> Int {
+public func randomInt( in range:Range<Int>) -> Int {
     return Int.random(in: range, using: &seededGenerator)
 }
 
-func randomInt( in range:ClosedRange<Int>) -> Int {
+public func randomInt( in range:ClosedRange<Int>) -> Int {
     return Int.random(in: range, using: &seededGenerator)
 }
 

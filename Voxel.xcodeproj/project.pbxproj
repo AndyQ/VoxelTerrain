@@ -44,6 +44,9 @@
 		A1F2111E2974665000C16FDE /* VoxelEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211182974665000C16FDE /* VoxelEngine.swift */; };
 		A1F2111F2974665000C16FDE /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211192974665000C16FDE /* Bitmap.swift */; };
 		A1F211232974765400C16FDE /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F211222974765400C16FDE /* AsyncButton.swift */; };
+		A1F2112529754A3000C16FDE /* HeightMapGenMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2112429754A3000C16FDE /* HeightMapGenMenu.swift */; };
+		A1F2112729754BCB00C16FDE /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2112629754BCB00C16FDE /* StatefulPreviewWrapper.swift */; };
+		A1F2112B2975ACB700C16FDE /* ErosionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2112A2975ACB700C16FDE /* ErosionMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +145,9 @@
 		A1F211182974665000C16FDE /* VoxelEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoxelEngine.swift; path = Engine/VoxelEngine.swift; sourceTree = SOURCE_ROOT; };
 		A1F211192974665000C16FDE /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bitmap.swift; path = Engine/Bitmap.swift; sourceTree = SOURCE_ROOT; };
 		A1F211222974765400C16FDE /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		A1F2112429754A3000C16FDE /* HeightMapGenMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightMapGenMenu.swift; sourceTree = "<group>"; };
+		A1F2112629754BCB00C16FDE /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
+		A1F2112A2975ACB700C16FDE /* ErosionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErosionMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,12 +279,14 @@
 		A187EDF6297463BD00CC2CA8 /* SwiftUI Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1F2112829754BEE00C16FDE /* Preview */,
+				A1F2112929754BFE00C16FDE /* Controls */,
 				A187EDF8297463E700CC2CA8 /* TerrainGenerationView.swift */,
+				A1F2112429754A3000C16FDE /* HeightMapGenMenu.swift */,
+				A1F2112A2975ACB700C16FDE /* ErosionMenu.swift */,
 				A187EDFA297463F100CC2CA8 /* MapSelectView.swift */,
 				A187EDFC297463FB00CC2CA8 /* VoxelView.swift */,
 				A187EDFE2974640B00CC2CA8 /* OverheadMapView.swift */,
-				A187EE002974648000CC2CA8 /* DisplayLink.swift */,
-				A1F211222974765400C16FDE /* AsyncButton.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -305,6 +313,23 @@
 				A1F2110B2974663000C16FDE /* Engine.h */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		A1F2112829754BEE00C16FDE /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2112629754BCB00C16FDE /* StatefulPreviewWrapper.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		A1F2112929754BFE00C16FDE /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A187EE002974648000CC2CA8 /* DisplayLink.swift */,
+				A1F211222974765400C16FDE /* AsyncButton.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,9 +522,12 @@
 				A187EDFD297463FB00CC2CA8 /* VoxelView.swift in Sources */,
 				A1F211232974765400C16FDE /* AsyncButton.swift in Sources */,
 				A187EDFF2974640B00CC2CA8 /* OverheadMapView.swift in Sources */,
+				A1F2112B2975ACB700C16FDE /* ErosionMenu.swift in Sources */,
 				A11CAE2629156A9800755BC1 /* GameController.swift in Sources */,
 				A187EDF9297463E700CC2CA8 /* TerrainGenerationView.swift in Sources */,
+				A1F2112529754A3000C16FDE /* HeightMapGenMenu.swift in Sources */,
 				A11BC95522312F14003D2BAE /* AppDelegate.swift in Sources */,
+				A1F2112729754BCB00C16FDE /* StatefulPreviewWrapper.swift in Sources */,
 				A187EDFB297463F100CC2CA8 /* MapSelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
